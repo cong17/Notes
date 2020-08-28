@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Notes With ReactJs & Redux</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">Notes</a>
+        <button class="navbar-toggler d-lg-none collapsed" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <div class="navbar-collapse justify-content-end collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+
+                    <a class="nav-link" href="#">Danh sách ghi chú</a>
+
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-sm col-xs-12">
+                <div id="NoteList" role="tablist" aria-multiselectable="true">
+                    <div class="card mb-2">
+                        <div class="card-header" role="tab" id="section1HeaderId">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#NoteList" href="#noteContent1"
+                                    aria-expanded="false" aria-controls="noteContent1" class="collapsed">
+                                    Ngày 25-09-2020
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="noteContent1" class="in collapse" role="tabpanel" style="">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum consectetur, assumenda
+                                illo, omnis quae, aliquid dolorum harum dolore a dolores inventore provident repudiandae
+                                quod ipsa quia repellendus! Quidem, tempore modi!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-2">
+                        <div class="card-header" role="tab" id="section1HeaderId">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#NoteList" href="#noteContent2"
+                                    aria-expanded="false" aria-controls="noteContent2" class="collapsed">
+                                    Ngày 26-09-2020
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="noteContent2" class="in collapse" role="tabpanel">
+                            <div class="card-body">
+                                Hôm nay đi chợ các kiểu .<br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima culpa odit in quaerat
+                                veniam odio, molestiae ducimus rerum, sunt eos aut deleniti, vitae mollitia? Delectus
+                                corrupti optio quas incidunt labore.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-xs-12">
+                <form>
+                    <div class="card ">
+                        <h4 class="card-header">Sửa note</h4>
+                        <div class="form-group m-2">
+                            <label for="">Sửa tiêu đề</label>
+                            <input type="text" class="form-control" name="" id="" placeholder="Tiêu để notes">
+                        </div>
+                        <div class="form-group m-2">
+                            <label for="">Điền nội dung vào đây</label>
+                            <textarea type="text" class="form-control" name="" id="" placeholder="Tiêu để notes"
+                                style="height: 30vh;"></textarea>
+                        </div>
+                    </div>
+                    <button type="reset" "="" name=" fsave" id="fsave"
+                        class="btn btn-primary btn-lg btn-block">Lưu</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end-container -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+</body>
+
+</html>
